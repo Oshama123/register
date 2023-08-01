@@ -36,8 +36,9 @@
         <!-- Container Fluid-->
         <div class="container-form ">
             <div class="wrap-form">
-                <form class="form validate-form" method="post"action="{{ route('submit') }}">
-                    {{ csrf_field() }}
+                <form class="form validate-form" method="POST"action="{{ route('submit-form') }}">
+                    @csrf
+                    @method('PUT')
                     <input type="hidden" name="_token" value="wrMDSP2ok13G8RSVdIUKLwv4mwY32vbplQnopNji">
                     <div class="form-logo m-b-5">
                         <img src="https://mudaschool.incomso.com/img/logo/logomark.png">
@@ -71,8 +72,8 @@
                     </div>
 
                     <div class="container-form-btn">
-                        <a href="/submit">
-                            <button class="login-form-btn">Submit</button>
+                        <a href="/">
+                            <button type="submit" class="login-form-btn">Submit</button>
                         </a>
                     </div>
                 </form>

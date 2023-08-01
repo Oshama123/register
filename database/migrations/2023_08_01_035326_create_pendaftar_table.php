@@ -14,12 +14,15 @@ class CreatePendaftarTable extends Migration
     public function up()
     {
         Schema::create('pendaftar', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('Nama');
-            $table->string('Email');
-            $table->integer('Nomor Whatsapp');
-            $table->string('Pekerjaan');
-            $table->string('Info Pendaftaran');
+            $table->id();
+            $table->string('nama');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('jobs');
+            $table->boolean('instagram')->default(false);
+            $table->boolean('website')->default(false);
+            $table->boolean('perusahaan')->default(false);
+            $table->timestamps();
         });
     }
 

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\pendaftarController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PendaftaranController;
 
 
 
@@ -19,3 +20,7 @@ Route::get('/admin', function () {
 
 Route::get('/form',[pendaftarController::class,'form'])->name('form');
 Route::post('/submit',[pendaftarController::class,'submit'])->name('submit');
+
+
+Route::put('/submit-form', [pendaftarController::class, 'submitForm'])->name('submit-form');
+Route::post('/form', 'PendaftarController@submitForm');
