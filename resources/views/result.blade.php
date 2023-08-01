@@ -59,12 +59,14 @@
                         </thead>
                         <tbody>
                             @foreach ($data as $item)
-                                <td>{{ $item->id }}</td>
-                                <td>{{ $item->nama }}</td>
-                                <td>{{ $item->email }}</td>
-                                <td>{{ $item->nomor_hp }}</td>
-                                <td>{{ $item->pekerja }}</td>
-                                {{-- <td>{{ $item->info }}</td> --}}
+                                <tr>
+                                    <td>{{ $item->id }}</td>
+                                    <td>{{ $item->nama }}</td>
+                                    <td>{{ $item->email }}</td>
+                                    <td>{{ $item->nomor_hp }}</td>
+                                    <td>{{ $item->pekerja }}</td>
+                                    {{-- <td>{{ $item->info }}</td> --}}
+                                </tr>
                             @endforeach
                         </tbody>
                     </table>
