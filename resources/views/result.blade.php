@@ -45,6 +45,29 @@
                     <div class="desc">
                         <p>Berikut Adalah Data Pendaftar</p>
                     </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Email</th>
+                                <th>Nomor Whatsapp</th>
+                                <th>Pekerjaan</th>
+                                {{-- <th></th> --}}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($data as $item)
+                                <td>{{ $item->id }}</td>
+                                <td>{{ $item->nama }}</td>
+                                <td>{{ $item->email }}</td>
+                                <td>{{ $item->nomor_hp }}</td>
+                                <td>{{ $item->pekerja }}</td>
+                                {{-- <td>{{ $item->info }}</td> --}}
+                            @endforeach
+                        </tbody>
+                    </table>
                 </form>
 
 
