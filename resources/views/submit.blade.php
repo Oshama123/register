@@ -40,7 +40,7 @@
                     <img src="https://mudaschool.incomso.com/img/logo/logomark.png">
                 </div>
                 <span class="form-title">Pendaftaran</span>
-                <span class="form-subtitle p-b-27">Pendaftaran Kegiatan MUDA</span>
+                <span class="form-subtitle p-b-27">Hubungan Damai Indonesia Jepang</span>
 
                 <div class="desc">
                     <p>Terimakasih Atas Partisipasi Anda. Jika Ingin melakukan Pendaftaran ke Orang Lain Silahkan Tekan

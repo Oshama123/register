@@ -43,29 +43,34 @@
 
                 <form action="form validate-form" method="get">
                     <div class="desc">
-                        <p>Berikut Adalah Data Pendaftar</p>
+                        <p>Berikut Adalah Data Pendaftar Hubungan Damai Indonesia Jepang</p>
                     </div>
 
                     <table>
                         <thead>
                             <tr>
-                                <th>No</th>
+                                <th style="
+                                width: 40px;">No</th>
                                 <th>Nama</th>
                                 <th>Email</th>
-                                <th>Nomor Whatsapp</th>
+                                <th>No. HP</th>
                                 <th>Pekerjaan</th>
-                                {{-- <th></th> --}}
+                                <th>Sumber Informasi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($data as $item)
+                            @foreach ($pendaftars as $item)
                                 <tr>
                                     <td>{{ $item->id }}</td>
                                     <td>{{ $item->nama }}</td>
                                     <td>{{ $item->email }}</td>
-                                    <td>{{ $item->nomor_hp }}</td>
-                                    <td>{{ $item->pekerja }}</td>
-                                    {{-- <td>{{ $item->info }}</td> --}}
+                                    <td>{{ $item->phone }}</td>
+                                    <td>{{ $item->jobs }}</td>
+                                    <td>
+                                        {{ $item->instagram == 1 ? 'instagram' : '' }}
+                                        {{ $item->website == 1 ? 'website' : '' }}
+                                        {{ $item->perusahaan == 1 ? 'perusaaan' : '' }}
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>

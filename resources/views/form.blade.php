@@ -34,35 +34,36 @@
 
     <div class="main">
         <!-- Container Fluid-->
-        <div class="container-form ">
+        <div class="Container-fluid container-form  ">
             <div class="wrap-form">
-                <form class="form validate-form" method="POST"action="{{ route('submit-form') }}">
+                <form class="form" method="POST"action="{{ route('submit') }}">
                     @csrf
-                    @method('PUT')
-                    <input type="hidden" name="_token" value="wrMDSP2ok13G8RSVdIUKLwv4mwY32vbplQnopNji">
+
                     <div class="form-logo m-b-5">
                         <img src="https://mudaschool.incomso.com/img/logo/logomark.png">
                     </div>
                     <span class="form-title">Pendaftaran</span>
-                    <span class="form-subtitle p-b-27">Pendaftaran Kegiatan MUDA</span>
+                    <span class="form-subtitle p-b-27">Hubungan Damai Indonesia Jepang</span>
 
                     <div class="wrap-input100 validate-input m-b-20" data-validate="Masukkan Nama Lengkap Anda">
-                        <input class="input100" type="text" name="nama" placeholder="Nama Lengkap">
+                        <input class="input100" type="text" name="nama" placeholder="Nama Lengkap" maxlength="60">
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input m-b-20" data-validate="Masukkan Email">
-                        <input class="input100" type="text" name="email" placeholder="Email">
+                        <input class="input100" type="text" name="email" placeholder="Email" maxlength="100">
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input m-b-20" data-validate="Masukkan Nomor Whatsapp Anda">
-                        <input class="input100" type="number" name="phone" placeholder="Nomor Whatsapp">
+                        <input class="input100" type="number" name="phone" placeholder="Nomor Whatsapp"
+                            maxlength="15">
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input m-b-20" data-validate="Masukkan Pekerjaan">
-                        <input class="input100" type="text" name="jobs" placeholder="Pekerjaan">
+                        <input class="input100" type="text" name="jobs" placeholder="Pekerjaan" maxlength="60">
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-checkbox validate-checkbox m-b-20" data-validate="Masukkan Pekerjaan">
+
                         <input type="checkbox" name="checkbox1">
                         <label for="checkbox1"> Instagram</label><br>
                         <input type="checkbox" name="checkbox2">
@@ -76,12 +77,12 @@
                             <button type="submit" class="login-form-btn">Submit</button>
                         </a>
                     </div>
+                    <p class="footer">Created By Lumintoo Sukses Incomso</p>
                 </form>
             </div>
             <!--Row-->
         </div>
     </div>
-
     {{-- Vendor JS Link --}}
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
