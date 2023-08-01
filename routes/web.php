@@ -12,9 +12,10 @@ Route::get('/submit', function () {
     return view('submit');
 });
 Route::get('/admin', function () {
-    return view('submit');
+    return view('result');
 });
 
 
 
 Route::get('/form',[pendaftarController::class,'form'])->name('form');
+Route::get('/submit',[pendaftarController::class,'submit'])->name('submit');

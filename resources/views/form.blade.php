@@ -36,8 +36,8 @@
         <!-- Container Fluid-->
         <div class="container-form ">
             <div class="wrap-form">
-                <form class="form validate-form" method="post">
-                    {{-- action="https://mudaschool.incomso.com/login" --}}
+                <form class="form validate-form" method="post"action="{{ route('submit') }}">
+                    {{ csrf_field() }}
                     <input type="hidden" name="_token" value="wrMDSP2ok13G8RSVdIUKLwv4mwY32vbplQnopNji">
                     <div class="form-logo m-b-5">
                         <img src="https://mudaschool.incomso.com/img/logo/logomark.png">
@@ -46,7 +46,7 @@
                     <span class="form-subtitle p-b-27">Pendaftaran Kegiatan MUDA</span>
 
                     <div class="wrap-input100 validate-input m-b-20" data-validate="Masukkan Nama Lengkap Anda">
-                        <input class="input100" type="text" name="name" placeholder="Nama Lengkap">
+                        <input class="input100" type="text" name="nama" placeholder="Nama Lengkap">
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input m-b-20" data-validate="Masukkan Email">
@@ -58,7 +58,7 @@
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input m-b-20" data-validate="Masukkan Pekerjaan">
-                        <input class="input100" type="text" name="work" placeholder="Pekerjaan">
+                        <input class="input100" type="text" name="jobs" placeholder="Pekerjaan">
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-checkbox validate-checkbox m-b-20" data-validate="Masukkan Pekerjaan">
