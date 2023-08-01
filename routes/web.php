@@ -18,4 +18,4 @@ Route::get('/admin', function () {
 
 
 Route::get('/form',[pendaftarController::class,'form'])->name('form');
-Route::get('/submit',[pendaftarController::class,'submit'])->name('submit');
+Route::post('/submit',[pendaftarController::class,'submit'])->name('submit');
