@@ -10,6 +10,13 @@ class pendaftarController extends Controller
         return view('form');
     }
     public function submit(Request $request){
-        dd($request->all());
+        // dd($request->all());
+
+        user::create([
+            'Nama' => $request->nama,
+            'Email' => $request->email,
+            'Nomor Whatsapp' => $request->phone,
+            'Pekerjaan' => $request->jobs,
+        ]);
     }
-}
+};

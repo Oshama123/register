@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/form', function () {
     return view('form');
 });
-Route::get('/submit', function () {
-    return view('submit');
-});
+// Route::get('/submit', function () {
+//     return view('submit');
+// });
 Route::get('/admin', function () {
     return view('result');
 });
